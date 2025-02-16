@@ -61,3 +61,5 @@ function playGame() {
         console.log(`Too bad! You lost ${humanScore} to ${computerScore}!`);
     }
 }
+
+playGame();
