@@ -50,3 +50,14 @@ function playRound(humanChoice, computerChoice) {
         computerScore++;
     }
 }
+
+function playGame() {
+    for (let index = 0; index < 5; index++) {
+        playRound();
+    }
+    if (humanScore > computerScore) {
+        console.log(`Congratulations! You won ${humanScore} to ${computerScore}!`);
+    } else {
+        console.log(`Too bad! You lost ${humanScore} to ${computerScore}!`);
+    }
+}
