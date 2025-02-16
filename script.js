@@ -52,8 +52,10 @@ function playRound(humanChoice, computerChoice) {
 }
 
 function playGame() {
-    for (let index = 0; index < 5; index++) {
-        playRound();
+    for (let index = 1; index < 6; index++) {
+        console.log(`This is round ${index}.`);
+        console.log(`The score is human: ${humanScore} vs computer: ${computerScore}!`);
+        playRound(getHumanChoice(), getComputerChoice());
     }
     if (humanScore > computerScore) {
         console.log(`Congratulations! You won ${humanScore} to ${computerScore}!`);
